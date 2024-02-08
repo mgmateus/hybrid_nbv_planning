@@ -1,0 +1,3 @@
+<launch>
+	<node name="mxscurl" pkg="hybrid_nbv_planning" type="mxscurl.py"/>
+</launch>
