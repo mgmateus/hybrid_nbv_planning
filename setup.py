@@ -6,9 +6,9 @@ from catkin_pkg.python_setup import generate_distutils_setup
 # fetch values from package.xml
 setup_args = generate_distutils_setup(
     packages=[
-            'airsim_resources',
-            'open3d_resources',
-            'gym_airsim'
+            "airsim_resources",
+            "gym_airsim",
+            "open3d_resources"            
             ],
     package_dir={"": "src/modules"})
 

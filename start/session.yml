@@ -15,6 +15,6 @@ windows:
   - simu:
       layout: tiled
       panes:
-        - sleep 8; roslaunch gym_airsim mxscurl.launch
+        - sleep 8; roslaunch hybrid_nbv_planning mxscurl.launch
 
                 
