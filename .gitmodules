@@ -1,0 +1,9 @@
+[submodule "src/modules/airsim_resources"]
+	path = src/modules/airsim_resources
+	url = https://github.com/mgmateus/airsim_resources.git
+[submodule "src/modules/open3d_resources"]
+	path = src/modules/open3d_resources
+	url = https://github.com/mgmateus/open3d_resources.git
+[submodule "src/modules/gym_airsim"]
+	path = src/modules/gym_airsim
+	url = https://github.com/mgmateus/gym_airsim.git
