@@ -2,6 +2,7 @@
 
 import rospy
 import time
+import os 
 
 import numpy as np
 
@@ -10,11 +11,12 @@ from gym_airsim.environments import EnvironmentROS
 
 if __name__ == "__main__":
     rospy.init_node("mxscurl", anonymous=False)
-    env = EnvironmentROS("Hydrone")
+    ip = os.environ['UE4_IP']
+    env = EnvironmentROS(ip, 'Hydrone', 'stereo', 'rgb')
     
-    action = np.array([0, 0, -1, 0, 1, 0])
+    action = np.array([.3, .5, -1, .1, .1, .1])
     env.vehicle.take_off()
-    time.sleep(4)
-    for i in range(100):
-        env.step(action)
+    for i in range(500):
+        pp = env.step(action)
+        rospy.logwarn(f"observation : {pp}")
         rospy.Rate(10).sleep()
