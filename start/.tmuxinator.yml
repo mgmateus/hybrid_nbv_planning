@@ -1,6 +1,6 @@
 name: hydrone_navigation
 root: ./
-startup_window: map
+startup_window: simu
 windows:
   - connection:
       layout: tiled
