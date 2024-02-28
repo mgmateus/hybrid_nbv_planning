@@ -14,7 +14,7 @@ if __name__ == "__main__":
     height = 376
     fov = 90
     rospy.logwarn('registration.py - main')
-    map = R3DROS(vehicle_name, depth_trunc, width, height, fov)
+    # map = R3DROS(vehicle_name, depth_trunc, width, height, fov)
     
 
-    rospy.spin()
+    # rospy.spin()
